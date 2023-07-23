@@ -1,1 +1,10 @@
 # RedLightGreenLight
+# cook your dish here
+for i in range(int(input())):
+    N,K = map(int,input().split())
+    A = list(map(int,input().split()))
+    count = 0
+    for j in range(N):
+        if A[j] > K:
+            count+=1
+    print(count)
